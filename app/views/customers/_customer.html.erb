@@ -1,0 +1,11 @@
+<div>
+  <h2><%= customer.full_name%></h2>
+  <p>phone number:<<%= customer.phone_number%>/p>
+  <% if customer.email_address.present? %>
+    <p>email:<%= customer.email_address %></p>
+  <% end %>
+  <% if customer.notes.present? %>
+    <p>Notes:<%= customer.notes %></p>
+  <% end %>
+  <%# todo add img %>
+</div>
